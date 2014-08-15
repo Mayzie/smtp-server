@@ -7,6 +7,7 @@ public class MySMTPServer {
 
 	public static void main(String[] args) {			
 		try {
+			@SuppressWarnings("resource")
 			ServerSocket smtpServer = new ServerSocket(6013);
 			
 			while (true) {

@@ -31,6 +31,12 @@ public class SMTPWrite {
 	
 	public void write(String line) {
 		if(this.emailFile != null) {
+			this.emailFile.print(line);
+		}
+	}
+	
+	public void writeLn(String line) {
+		if(this.emailFile != null) {
 			this.emailFile.println(line);
 		}
 	}
